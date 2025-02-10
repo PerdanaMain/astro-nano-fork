@@ -1,5 +1,5 @@
 ---
-title: "Shayna LMS"
+title: "Shayna - Learning Management System"
 description: "A Learning Management System By Build With Angga Course"
 date: "Januari, 10 2025"
 demoURL: "https://bwa-fe-lms.vercel.app/"
