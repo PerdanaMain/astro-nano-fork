@@ -1,6 +1,6 @@
 ---
 title: "MIA - Asset Management System"
-description: "An Asset Management System By PT Perkebunan Nusantara I"
+description: "A Asset Management System By PT Perkebunan Nusantara I"
 date: "November, 10 2023"
 demoURL: "https://aset.ptpn1.co.id/"
 ---
