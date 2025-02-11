@@ -40,6 +40,6 @@ export const SOCIALS: Socials = [
   },
   {
     NAME: "resume",
-    HREF: "https://www.instagram.com/firmanperdana/",
+    HREF: "https://drive.google.com/file/d/12z2usZgA2DkuMxmbVAjelX3Ojj3qLMLf/view?usp=sharing",
   },
 ];
