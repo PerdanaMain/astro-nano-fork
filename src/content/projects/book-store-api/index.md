@@ -2,8 +2,8 @@
 title: "Book Store API"
 description: "A Book Store API By Sanber Code Bootcamp Final Project"
 date: "December,20 2024"
-demoURL: "https://book-store-api-sanber-code-bootcamp.vercel.app/"
-repoURL: "https://github.com/fahru-dev/book-store-api-sanber-code-bootcamp"
+demoURL: "https://sanber62-firman.vercel.app/docs"
+repoURL: "https://github.com/PerdanaMain/sanber62-firman.git"
 status: "Completed"
 ---
 
