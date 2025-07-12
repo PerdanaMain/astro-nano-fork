@@ -13,8 +13,8 @@ status: "Completed"
   <span class="text-sm font-bold">
     📝:
   </span>
-  <span class="text-yellow-500 me-4">
-    On Going
+  <span class="text-green-500 me-4">
+    Completed
   </span>
   <span class="text-sm font-bold">
     🔒:
