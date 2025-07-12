@@ -1,18 +1,18 @@
 ---
-title: "MIA - Asset Management System"
-description: "An Asset Management System By PT Perkebunan Nusantara I"
-date: "November, 10 2023"
-demoURL: "https://aset.ptpn1.co.id/"
+title: "NOGS BKI"
+description: "A Testing, Inspection, and Certification Management System By PT Biro Klasifikasi Indonesia"
+date: "April, 10 2025"
+demoURL: "https://new.bki.co.id/"
 ---
 
-![Asset Management System](/projects/mia.png)
+![Document Management System](/projects/nogs-bki-4.png)
 
 <div class="animate">
   <span class="text-sm font-bold">
     📝:
   </span>
-  <span class="text-green-500 me-4">
-    Completed
+  <span class="text-yellow-500 me-4">
+    On Going
   </span>
   <span class="text-sm font-bold">
     🔒:
@@ -22,7 +22,7 @@ demoURL: "https://aset.ptpn1.co.id/"
   </span>
 </div>
 
-Manajemen Inventarisasi Aset is a web-based application with purpose to manage the asset of PT Perkebunan Nusantara I. This system can be identify the asset such as land, building, condition, coordinate and etc.
+NOGS BKI is a web-based application designed to manage the testing, inspection, and certification processes of PT Biro Klasifikasi Indonesia. This system facilitates the management of various documents and processes related to maritime classification and certification.
 
 ### Technology Used
 
@@ -34,10 +34,13 @@ Manajemen Inventarisasi Aset is a web-based application with purpose to manage t
       <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/mysql.png" alt="mysql" class="w-8 h-8">
     </div>      
     <div class="flex flex-col items-center">
-      <img src="https://cdn.worldvectorlogo.com/logos/codeigniter-1.svg" alt="codeigniter" class="w-8 h-8">
+      <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/laravel.png" alt="laravel" class="w-8 h-8">
     </div> 
     <div class="flex flex-col items-center">
       <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/bootstrap.png" alt="bootstrap" class="w-8 h-8">
+    </div> 
+    <div class="flex flex-col items-center">
+      <img src="https://raw.githubusercontent.com/marwin1991/profile-technology-icons/refs/heads/main/icons/docker.png" alt="docker" class="w-8 h-8">
     </div> 
 </div>
 
@@ -54,6 +57,9 @@ Manajemen Inventarisasi Aset is a web-based application with purpose to manage t
 
 - Authentication, to access the features that need to be authenticated.
 - Dashboard, to see the overview of the application.
-- Asset Management, to manage the asset of PT Perkebunan Nusantara I.
-- Report, to generate the report of the asset.
-- Asset Coordinate, to see the coordinate of the asset.
+![Survey Report](/projects/nogs-bki-1.png)
+- Document Management, to manage the documents related to testing, inspection, and certification.
+![Survey Report](/projects/nogs-bki-3.png)
+- Survey Report, to generate reports related to the testing and inspection processes.
+![Survey Report](/projects/nogs-bki-2.png)
+
