@@ -40,6 +40,6 @@ export const SOCIALS: Socials = [
   },
   {
     NAME: "resume",
-    HREF: "https://drive.google.com/file/d/12z2usZgA2DkuMxmbVAjelX3Ojj3qLMLf/view?usp=sharing",
+    HREF: "https://drive.google.com/file/d/1OGMh2ZB-gCrQPurgLykc2UsRcrv0d7_T/view?usp=sharing",
   },
 ];
