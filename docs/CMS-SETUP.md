@@ -105,14 +105,17 @@ Tips:
 npm run dev
 ```
 
-Buka `http://localhost:4321/admin/index.html` (saat lokal, URL
-`/admin/` tanpa `index.html` belum di-resolve oleh dev server; di
-produksi Cloudflare Pages `/admin/` berfungsi normal). Konfigurasi sudah
-berisi `local_backend: true`, jadi untuk mencoba edit tanpa login GitHub:
+Buka `http://localhost:4321/admin/`. Login GitHub di /admin/ baru bisa
+dipakai setelah setup di bagian B–C selesai (worker ter-deploy dan
+placeholder `config.yml` terisi). Sebelum itu, untuk mencoba CMS secara
+lokal tanpa login GitHub jalankan juga:
 
 ```bash
 npx decap-server   # di terminal terpisah
 ```
+
+Konfigurasi sudah berisi `local_backend: true`, jadi saat berjalan di
+localhost CMS otomatis memakai server lokal tersebut sebagai backend.
 
 Catatan: mode lokal menulis langsung ke file di repo (belum tentu identik
 dengan mode GitHub), dan diabaikan sepenuhnya saat produksi.
