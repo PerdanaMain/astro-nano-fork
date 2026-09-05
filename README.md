@@ -1,4 +1,4 @@
-![Astro Nano](_astro_nano.png)
+![Astro Nano](docs/assets/astro-nano.png)
 
 Astro Nano is a static, minimalist, lightweight, lightning fast portfolio and blog theme.
 
@@ -8,7 +8,7 @@ It was designed as an even more minimal theme than my popular theme [Astro Spher
 
 ## 🚀 Deploy your own
 
-[![Deploy with Vercel](_deploy_vercel.svg)](https://vercel.com/new/clone?repository-url=https://github.com/markhorn-dev/astro-nano)  [![Deploy with Netlify](_deploy_netlify.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/markhorn-dev/astro-nano)
+[![Deploy with Vercel](docs/assets/deploy-vercel.svg)](https://vercel.com/new/clone?repository-url=https://github.com/markhorn-dev/astro-nano)  [![Deploy with Netlify](docs/assets/deploy-netlify.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/markhorn-dev/astro-nano)
 
 ## 📋 Features
 
@@ -27,7 +27,7 @@ It was designed as an even more minimal theme than my popular theme [Astro Spher
 - ✅ MDX Support (components in your markdown)
 
 ## 💯 Lighthouse score
-![Astro Nano Lighthouse Score](_lighthouse.png)
+![Astro Nano Lighthouse Score](docs/assets/lighthouse.png)
 
 ## 🕊️ Lightweight
 No frameworks or added bulk
@@ -44,7 +44,7 @@ The blog posts on the demo serve as the documentation and configuration.
 Content (projects, blog, work) and site settings can be edited without coding
 through **Sveltia CMS** at `/admin/` after the one-time Cloudflare setup.
 See [docs/CMS-SETUP.md](docs/CMS-SETUP.md) for the full guide and
-[cms-auth/README.md](cms-auth/README.md) for the authentication worker.
+[docs/CMS-AUTH.md](docs/CMS-AUTH.md) for the authentication worker.
 
 ## 💻 Commands
 

@@ -26,7 +26,7 @@ Situs live dengan konten terbaru
   - **Sveltia CMS** — halaman admin di `/admin/` (`public/admin/`), di-host
     bersama situs di Cloudflare Pages.
   - **Sveltia CMS Authenticator** — Cloudflare Worker kecil (gratis) untuk login
-    GitHub. Lihat [cms-auth/README.md](../cms-auth/README.md).
+    GitHub. Lihat [CMS-AUTH.md](./CMS-AUTH.md).
 
 ## A. Deploy situs ke Cloudflare Pages
 
@@ -50,7 +50,7 @@ Situs live dengan konten terbaru
 
 ## B. Deploy worker autentikasi (login GitHub)
 
-Ikuti langkah di [cms-auth/README.md](../cms-auth/README.md): clone
+Ikuti langkah di [CMS-AUTH.md](./CMS-AUTH.md): clone
 `sveltia/sveltia-cms-auth`, deploy dengan `wrangler`, daftarkan GitHub OAuth
 App (callback `<url-worker>/callback`), lalu simpan `GITHUB_CLIENT_ID` dan
 `GITHUB_CLIENT_SECRET` sebagai secret worker. Gratis (free tier Workers).

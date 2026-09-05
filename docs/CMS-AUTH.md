@@ -1,12 +1,12 @@
 # cms-auth — Autentikasi CMS (Sveltia CMS Authenticator)
 
-Folder ini hanya berisi panduan. Kode worker-nya memakai proyek resmi
-[sveltia/sveltia-cms-auth](https://github.com/sveltia/sveltia-cms-auth)
+Dokumen ini berisi panduan deploy worker autentikasi. Kode worker-nya memakai
+proyek resmi [sveltia/sveltia-cms-auth](https://github.com/sveltia/sveltia-cms-auth)
 (Cloudflare Worker, gratis) supaya selalu ikut update resminya — tidak
 di-copy ke repo ini agar perbaikan keamanan upstream langsung bisa diikuti.
 
 Worker ini menjembatani login GitHub untuk halaman admin `/admin/`
-(Sveltia CMS). Alur lengkapnya ada di [docs/CMS-SETUP.md](../docs/CMS-SETUP.md).
+(Sveltia CMS). Alur lengkapnya ada di [CMS-SETUP.md](./CMS-SETUP.md).
 
 ## Langkah deploy (sekali saja, ±10 menit)
 
