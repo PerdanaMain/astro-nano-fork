@@ -11,6 +11,12 @@ export type Metadata = {
   DESCRIPTION: string;
 };
 
+export type HomeMetadata = Metadata & {
+  GREETING: string;
+  GREETING_EMOJI?: string;
+  BIO: string;
+};
+
 export type Socials = {
   NAME: string;
   HREF: string;

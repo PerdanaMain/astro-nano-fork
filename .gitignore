@@ -17,6 +17,10 @@ pnpm-debug.log*
 # environment variables
 .env
 .env.production
+cms-auth/.dev.vars
 
 # macOS-specific files
 .DS_Store
+
+# zcode session artifacts
+.zcode/

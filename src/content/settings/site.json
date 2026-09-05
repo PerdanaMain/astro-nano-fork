@@ -1,0 +1,42 @@
+{
+  "SITE": {
+    "NAME": "Firman Perdana",
+    "EMAIL": "firman.fp123@gmail.com",
+    "NUM_POSTS_ON_HOMEPAGE": 3,
+    "NUM_WORKS_ON_HOMEPAGE": 2,
+    "NUM_PROJECTS_ON_HOMEPAGE": 3
+  },
+  "HOME": {
+    "TITLE": "Home",
+    "DESCRIPTION": "Astro Nano is a minimal and lightweight blog and portfolio.",
+    "GREETING": "Hi, Firman Perdana",
+    "GREETING_EMOJI": "👋🏻",
+    "BIO": "I am an Experienced software engineer with a proven track record of delivering high-performance systems across diverse industries including agriculture, IT networking, education, and manufacturing. Specializes in designing scalable architectures, performance optimization, debugging, and troubleshooting."
+  },
+  "BLOG": {
+    "TITLE": "Blog",
+    "DESCRIPTION": "A collection of articles on topics I am passionate about."
+  },
+  "WORK": {
+    "TITLE": "Work",
+    "DESCRIPTION": "Where I have worked and what I have done."
+  },
+  "PROJECTS": {
+    "TITLE": "Projects",
+    "DESCRIPTION": "A collection of my projects, with links to repositories and demos."
+  },
+  "SOCIALS": [
+    {
+      "NAME": "github",
+      "HREF": "https://github.com/perdanamain/"
+    },
+    {
+      "NAME": "linkedin",
+      "HREF": "https://www.linkedin.com/in/firmanperdana/"
+    },
+    {
+      "NAME": "resume",
+      "HREF": "https://drive.google.com/file/d/1OGMh2ZB-gCrQPurgLykc2UsRcrv0d7_T/view?usp=sharing"
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+# ============================================================
+# Sveltia CMS configuration — https://github.com/sveltia/cms
+# Editor konten tersedia di /admin/ setelah setup selesai.
+#
+# PENTING: ganti kedua placeholder REPLACE-ME di bawah ini
+# setelah deployment Cloudflare (lihat docs/CMS-SETUP.md).
+# ============================================================
+
+backend:
+  name: github
+  repo: PerdanaMain/astro-nano-fork
+  branch: main
+  # URL Cloudflare Worker autentikasi (sveltia-cms-auth).
+  base_url: https://replace-me-cms-auth.REPLACE-ME.workers.dev
+
+# URL publik situs ini (Cloudflare Pages), tanpa trailing slash.
+site_url: https://replace-me.pages.dev
+
+# Gambar yang diupload lewat CMS disimpan di sini.
+media_folder: public/uploads
+public_folder: /uploads
+
+# Untuk uji coba lokal saja (npx decap-server); diabaikan di produksi.
+local_backend: true
+
+collections:
+  # ----------------------------------------------------------
+  # PROJECTS — src/content/projects/<slug>/index.md
+  # Field mengikuti schema Zod di src/content/config.ts.
+  # ----------------------------------------------------------
+  - name: "projects"
+    label: "Projects"
+    label_singular: "Project"
+    folder: "src/content/projects"
+    create: true
+    path: "{{slug}}/index"
+    sortable_fields: ["title", "date"]
+    summary: "{{title}} — {{date}}"
+    editor:
+      preview: false
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Description"
+        name: "description"
+        widget: "text"
+      - label: "Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        date_format: "YYYY-MM-DD"
+        time_format: false
+        picker_utc: true
+      - label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: false
+        required: false
+      - label: "Demo URL"
+        name: "demoURL"
+        widget: "string"
+        required: false
+      - label: "Docs URL"
+        name: "docsURL"
+        widget: "string"
+        required: false
+      - label: "Repo URL"
+        name: "repoURL"
+        widget: "string"
+        required: false
+      - label: "Tools"
+        name: "tools"
+        widget: "list"
+        required: false
+        hint: "Nama tools/teknologi yang dipakai di project ini"
+
+  # ----------------------------------------------------------
+  # BLOG — src/content/blog/<slug>/index.md
+  # ----------------------------------------------------------
+  - name: "blog"
+    label: "Blog"
+    label_singular: "Post"
+    folder: "src/content/blog"
+    create: true
+    path: "{{slug}}/index"
+    sortable_fields: ["title", "date"]
+    summary: "{{title}} — {{date}}"
+    editor:
+      preview: false
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Description"
+        name: "description"
+        widget: "text"
+        hint: "Dipakai sebagai meta description untuk SEO"
+      - label: "Date"
+        name: "date"
+        widget: "datetime"
+        format: "YYYY-MM-DD"
+        date_format: "YYYY-MM-DD"
+        time_format: false
+        picker_utc: true
+      - label: "Draft"
+        name: "draft"
+        widget: "boolean"
+        default: false
+        required: false
+        hint: "Post draft tidak tampil di situs"
+
+  # ----------------------------------------------------------
+  # WORK — src/content/work/<slug>.md
+  # ----------------------------------------------------------
+  - name: "work"
+    label: "Work"
+    label_singular: "Work"
+    folder: "src/content/work"
+    create: true
+    sortable_fields: ["company", "dateStart"]
+    summary: "{{company}} — {{role}}"
+    editor:
+      preview: false
+    fields:
+      - label: "Company"
+        name: "company"
+        widget: "string"
+      - label: "Role"
+        name: "role"
+        widget: "string"
+      - label: "Start date"
+        name: "dateStart"
+        widget: "datetime"
+        format: "MM/DD/YYYY"
+        date_format: "MM/DD/YYYY"
+        time_format: false
+        picker_utc: true
+      - label: "End date"
+        name: "dateEnd"
+        widget: "string"
+        required: true
+        hint: "Isi tanggal MM/DD/YYYY (contoh: 03/25/2024), atau tulis Present jika masih bekerja"
+
+  # ----------------------------------------------------------
+  # SETTINGS — profil situs (src/content/settings/site.json)
+  # ----------------------------------------------------------
+  - name: "settings"
+    label: "Site Settings"
+    files:
+      - name: "site"
+        label: "Site Settings"
+        file: "src/content/settings/site.json"
+        format: "json"
+        editor:
+          preview: false
+        fields:
+          - label: "Site"
+            name: "SITE"
+            widget: "object"
+            fields:
+              - label: "Name"
+                name: "NAME"
+                widget: "string"
+                hint: "Nama Anda, dipakai di beberapa teks situs"
+              - label: "Email"
+                name: "EMAIL"
+                widget: "string"
+              - label: "Jumlah post terbaru di homepage"
+                name: "NUM_POSTS_ON_HOMEPAGE"
+                widget: "number"
+                value_type: "int"
+                min: 0
+              - label: "Jumlah work terbaru di homepage"
+                name: "NUM_WORKS_ON_HOMEPAGE"
+                widget: "number"
+                value_type: "int"
+                min: 0
+              - label: "Jumlah project terbaru di homepage"
+                name: "NUM_PROJECTS_ON_HOMEPAGE"
+                widget: "number"
+                value_type: "int"
+                min: 0
+          - label: "Home Page"
+            name: "HOME"
+            widget: "object"
+            fields:
+              - label: "Title (tab browser)"
+                name: "TITLE"
+                widget: "string"
+              - label: "Meta description"
+                name: "DESCRIPTION"
+                widget: "text"
+              - label: "Greeting"
+                name: "GREETING"
+                widget: "string"
+                hint: "Sapaan di bagian atas homepage"
+              - label: "Greeting emoji"
+                name: "GREETING_EMOJI"
+                widget: "string"
+                required: false
+              - label: "Bio paragraph"
+                name: "BIO"
+                widget: "text"
+                hint: "Paragraf perkenalan di homepage"
+          - label: "Blog Page"
+            name: "BLOG"
+            widget: "object"
+            fields:
+              - label: "Title (tab browser)"
+                name: "TITLE"
+                widget: "string"
+              - label: "Meta description"
+                name: "DESCRIPTION"
+                widget: "text"
+          - label: "Work Page"
+            name: "WORK"
+            widget: "object"
+            fields:
+              - label: "Title (tab browser)"
+                name: "TITLE"
+                widget: "string"
+              - label: "Meta description"
+                name: "DESCRIPTION"
+                widget: "text"
+          - label: "Projects Page"
+            name: "PROJECTS"
+            widget: "object"
+            fields:
+              - label: "Title (tab browser)"
+                name: "TITLE"
+                widget: "string"
+              - label: "Meta description"
+                name: "DESCRIPTION"
+                widget: "text"
+          - label: "Socials"
+            name: "SOCIALS"
+            widget: "list"
+            hint: "Tautan sosial media di homepage"
+            fields:
+              - label: "Name"
+                name: "NAME"
+                widget: "string"
+                hint: "Teks label link (github, linkedin, dst.)"
+              - label: "URL"
+                name: "HREF"
+                widget: "string"

@@ -15,17 +15,13 @@ const projects = (await getCollection("projects"))
 <PageLayout title={HOME.TITLE} description={HOME.DESCRIPTION}>
   <Container>
     <h4 class="animate font-semibold text-black dark:text-white">
-      Hi, Firman Perdana <span class="text-xl">👋🏻</span>
+      {HOME.GREETING} <span class="text-xl">{HOME.GREETING_EMOJI}</span>
     </h4>
     <div class="space-y-16">
       <section>
         <article class="space-y-4">
           <p class="animate">
-            I am an Experienced software engineer with a proven track record of
-            delivering high-performance systems across diverse industries
-            including agriculture, IT networking, education, and manufacturing.
-            Specializes in designing scalable architectures, performance
-            optimization, debugging, and troubleshooting.
+            {HOME.BIO}
           </p>
         </article>
       </section>

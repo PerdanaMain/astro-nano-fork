@@ -39,6 +39,13 @@ Rendered in ~40ms on localhost
 
 The blog posts on the demo serve as the documentation and configuration.
 
+## ✏️ Editing content (CMS)
+
+Content (projects, blog, work) and site settings can be edited without coding
+through **Sveltia CMS** at `/admin/` after the one-time Cloudflare setup.
+See [docs/CMS-SETUP.md](docs/CMS-SETUP.md) for the full guide and
+[cms-auth/README.md](cms-auth/README.md) for the authentication worker.
+
 ## 💻 Commands
 
 All commands are run from the root of the project, from a terminal:
