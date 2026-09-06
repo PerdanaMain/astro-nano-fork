@@ -6,12 +6,25 @@ type Props = {
 };
 
 const { entry } = Astro.props;
+const image = "image" in entry.data ? entry.data.image : undefined;
 ---
 
 <a
   href={`/${entry.collection}/${entry.slug}`}
-  class="relative group flex flex-nowrap py-3 px-4 pr-10 rounded-lg border border-black/15 dark:border-white/20 hover:bg-black/5 dark:hover:bg-white/5 hover:text-black dark:hover:text-white transition-colors duration-300 ease-in-out"
+  class="relative group flex flex-nowrap gap-3 py-3 px-4 pr-10 rounded-lg border border-black/15 dark:border-white/20 hover:bg-black/5 dark:hover:bg-white/5 hover:text-black dark:hover:text-white transition-colors duration-300 ease-in-out"
 >
+  {
+    image && (
+      <img
+        src={image}
+        alt={entry.data.title}
+        width="256"
+        height="256"
+        loading="lazy"
+        class="size-16 my-auto object-cover rounded-md border border-black/15 dark:border-white/20"
+      />
+    )
+  }
   <div class="flex flex-col flex-1 truncate">
     <div class="font-semibold">
       {entry.data.title}

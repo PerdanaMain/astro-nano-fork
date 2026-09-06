@@ -66,6 +66,16 @@ const { Content } = await project.render();
         )
       }
     </div>
+    {
+      project.data.image && (
+        <img
+          src={project.data.image}
+          alt={project.data.title}
+          loading="lazy"
+          class="animate w-full mb-10 rounded-lg border border-black/15 dark:border-white/20"
+        />
+      )
+    }
     <article class="animate">
       <Content />
     </article>
