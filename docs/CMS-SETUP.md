@@ -108,14 +108,16 @@ npm run dev
 Buka `http://localhost:4321/admin/`. Login GitHub di /admin/ baru bisa
 dipakai setelah setup di bagian B–C selesai (worker ter-deploy dan
 placeholder `config.yml` terisi). Sebelum itu, untuk mencoba CMS secara
-lokal tanpa login GitHub jalankan juga:
+lokal tanpa login GitHub klik tombol **Work with Local Repository** di
+halaman login lalu pilih folder root repo ini — Sveltia CMS punya mode
+lokal bawaan (berbasis File System Access API browser) yang menulis
+langsung ke file di repo; `npx decap-server` tidak dipakai dan tidak
+diperlukan.
 
-```bash
-npx decap-server   # di terminal terpisah
-```
-
-Konfigurasi sudah berisi `local_backend: true`, jadi saat berjalan di
-localhost CMS otomatis memakai server lokal tersebut sebagai backend.
+Alternatif tanpa worker autentikasi: klik **Sign In Using Access Token**
+dan tempel [personal access token](https://github.com/settings/tokens)
+(scopes `repo` / `public_repo` sesuai visibilitas repo) — cara ini juga
+bisa dipakai di situs produksi.
 
 Catatan: mode lokal menulis langsung ke file di repo (belum tentu identik
 dengan mode GitHub), dan diabaikan sepenuhnya saat produksi.
@@ -125,7 +127,8 @@ dengan mode GitHub), dan diabaikan sepenuhnya saat produksi.
 | Masalah | Kemungkinan sebab & solusi |
 | :--- | :--- |
 | Login gagal / `redirect_uri_mismatch` | Callback URL di GitHub OAuth App harus persis `<url-worker>/callback` |
-| Popup login menutup tanpa masuk | `base_url` di `config.yml` belum diisi/di-deploy; cek URL worker |
+| Popup login menutup tanpa masuk | `base_url` di `config.yml` belum diisi/di-deploy; cek URL worker — atau login pakai access token |
 | `NOT_FOUND` saat buka `/admin/` | Belum push ke `main`, atau Cloudflare Pages belum selesai rebuild |
 | Perubahan tidak muncul di situs | Build masih berjalan (cek dashboard) atau Anda melihat cache browser (Ctrl+Shift+R) |
 | Error validasi saat build (konten gagal) | Field konten tidak sesuai schema di `src/content/config.ts`; periksa pesan error build di dashboard Cloudflare |
+| Gambar upload tersimpan di folder entri, bukan `public/uploads/` | Koleksi dengan `path` (projects/blog) belum punya `media_folder` absolut di level koleksi — sudah diperbaiki di `config.yml`; jangan dihapus |

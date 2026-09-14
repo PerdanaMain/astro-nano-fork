@@ -13,11 +13,16 @@ backend:
   # URL Cloudflare Worker autentikasi (sveltia-cms-auth).
   base_url: https://replace-me-cms-auth.REPLACE-ME.workers.dev
 
-# URL publik situs ini (Cloudflare Pages), tanpa trailing slash.
-site_url: https://replace-me.pages.dev
+# URL publik situs ini, tanpa trailing slash.
+site_url: https://perdanamain.web.id
 
 # Gambar yang diupload lewat CMS disimpan di sini.
-media_folder: public/uploads
+# PENTING: koleksi yang memakai opsi `path` (projects, blog) WAJIB punya
+# media_folder sendiri di level koleksi — tanpa itu Sveltia CMS memaksa
+# penyimpanan "entry-relative" (file tersimpan di folder entri, path gambar
+# relatif, dan gambar jadi rusak di situs live). Path diawali "/" = absolut
+# dari root repo.
+media_folder: /public/uploads
 public_folder: /uploads
 
 # Untuk uji coba lokal saja (npx decap-server); diabaikan di produksi.
@@ -34,6 +39,10 @@ collections:
     folder: "src/content/projects"
     create: true
     path: "{{slug}}/index"
+    # Simpan upload di folder global, bukan di folder entri (lihat catatan
+    # media_folder di bagian atas file ini).
+    media_folder: /public/uploads
+    public_folder: /uploads
     sortable_fields: ["title", "date"]
     summary: "{{title}} — {{date}}"
     editor:
@@ -89,6 +98,9 @@ collections:
     folder: "src/content/blog"
     create: true
     path: "{{slug}}/index"
+    # Sama seperti projects: cegah penyimpanan entry-relative.
+    media_folder: /public/uploads
+    public_folder: /uploads
     sortable_fields: ["title", "date"]
     summary: "{{title}} — {{date}}"
     editor:
