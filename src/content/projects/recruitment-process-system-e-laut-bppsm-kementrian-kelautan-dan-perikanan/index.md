@@ -13,8 +13,8 @@ description: |-
   4. Hilir (meliputi _cold storage_, unit pengolahan, serta pabrik es dan _ice flake_)
   5. Kawasan pendukung
 
-  Guna memenuhi sebagian kebutuhan tenaga kerja tersebut, Badan Penyuluhan dan Pengembangan Sumber Daya Manusia Kelautan dan Perikanan (BPPSDM KP) melalui Pusat Pendidikan Kelautan dan Perikanan akan membuka kelas khusus. BPPSDM KP akan membuka kelas khusus bagi 3.000 orang untuk memenuhi kebutuhan tenaga kerja praktisi budi daya udang pada segmen _on-farm_ dan kawasan pendukung.![](Screenshot%202026-09-14%20at%2020.09.58.png)
-image: Screenshot 2026-09-14 at 20.09.58.png
+  Guna memenuhi sebagian kebutuhan tenaga kerja tersebut, Badan Penyuluhan dan Pengembangan Sumber Daya Manusia Kelautan dan Perikanan (BPPSDM KP) melalui Pusat Pendidikan Kelautan dan Perikanan akan membuka kelas khusus. BPPSDM KP akan membuka kelas khusus bagi 3.000 orang untuk memenuhi kebutuhan tenaga kerja praktisi budi daya udang pada segmen _on-farm_ dan kawasan pendukung.
+image: ''
 date: 2026-03-14
 draft: false
 demoURL: https://elaut-bppsdm.kkp.go.id/waingapu/
