@@ -1,6 +1,7 @@
 ---
 title: "Luarkelas Backend API"
 description: "A Backend API Architecture for Luarkelas Indonesia Edutech Startup"
+image: /projects/luarkelas.png
 date: "May, 19 2024"
 demoURL: "https://documenter.getpostman.com/view/26370787/2sA2xcbFag"
 status: "Completed"

@@ -1,6 +1,7 @@
 ---
 title: "Digital Twin "
 description: "An Asset Health Management System By PLN Unit Pembangkitan Tanjung Jati B"
+image: /projects/digital-twin.png
 date: "Februari, 8 2025"
 docsURL: "https://drive.google.com/file/d/12tweHB84BM9qpLLJTriv19wqQKxocOcj/view"
 repoURL: ""

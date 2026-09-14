@@ -1,6 +1,7 @@
 ---
 title: "On Board Reporting App - BKI"
 description: "A cross-platform desktop application that empowers marine surveyors with offline data synchronization for PT Biro Klasifikasi Indonesia (BKI)"
+image: /projects/onboard.png
 date: "Februari, 10 2026"
 demoURL: "https://drive.google.com/file/d/1Z6EMo5IXiEuHaoh_zYKpw12nsXu3n3yL/view?usp=drive_link"
 ---

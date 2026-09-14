@@ -1,6 +1,7 @@
 ---
 title: "Dynamits API"
 description: "A Package Tracking System for Electrical Vehicles"
+image: /projects/dynamits-api.png
 date: "March, 20 2025"
 demoURL: "https://documenter.getpostman.com/view/26370787/2sAYdin9D9#cad8423b-5a8f-450d-8a9d-72ac7d76b966"
 ---

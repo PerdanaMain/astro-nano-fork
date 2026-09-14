@@ -1,6 +1,7 @@
 ---
 title: "OSS Planters - Farming Management System"
 description: "A Farming Management System By PT Perkebunan Nusantara I"
+image: /projects/oss-planters.png
 date: "July, 10 2023"
 demoURL: "https://oss.ptpn12.com/"
 ---

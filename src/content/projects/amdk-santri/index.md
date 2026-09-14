@@ -1,6 +1,7 @@
 ---
 title: "Amdk Santri"
 description: "A System Application and Product for Air Minum Dalam Kemasan Santri"
+image: /projects/amdk-santri.png
 date: "June, 19 2024"
 demoURL: "https://amdksantri.com/"
 ---

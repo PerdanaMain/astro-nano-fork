@@ -1,6 +1,7 @@
 ---
 title: "DVE - Network Device Management System"
 description: "A Network Device Management System By In Building PT XL Axiata Surabaya"
+image: /projects/dve.png
 date: "February, 10 2023"
 demoURL: "https://fe-dve-app.vercel.app/"
 ---

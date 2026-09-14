@@ -1,6 +1,7 @@
 ---
 title: "NOGS BKI"
 description: "A Testing, Inspection, and Certification Management System By PT Biro Klasifikasi Indonesia"
+image: /projects/nogs-bki-1.png
 date: "April, 10 2025"
 demoURL: "https://new.bki.co.id/"
 ---

@@ -1,6 +1,7 @@
 ---
 title: "ID Survey - Content Management System"
 description: "A Content Management System By PT Inspeksi Sertifikasi Dan Survey Indonesia (IDSurvey)"
+image: /projects/idsurvey.png
 date: "January, 20 2026"
 demoURL: "https://www.idsurvey.id/en"
 ---

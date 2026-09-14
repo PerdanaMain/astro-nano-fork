@@ -1,6 +1,7 @@
 ---
 title: "Absensi Albaiad"
 description: "A Presence Management System for Albaid Students and Teachers"
+image: /projects/absensi-albaiad.png
 date: "August, 17 2024"
 demoURL: "https://absensi.albaiad.com/"
 ---
